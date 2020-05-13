@@ -78,8 +78,7 @@ jobs:
     - name: Update feeds
       run: |
         cd openwrt && ./scripts/feeds update -a
-        cd openwrt && rm -rf ./feeds
-        cd openwrt && ./scripts/feeds update -a
+ 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
