@@ -114,8 +114,8 @@ jobs:
       uses: actions/upload-artifact@master
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
-        name: OpenWrt_bin
-        path: openwrt/bin
+        name: OpenWrt_dl
+        path: openwrt/dl
 
     - name: Organize files
       id: organize
